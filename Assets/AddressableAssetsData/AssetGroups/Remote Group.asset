@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Remote Group
+  m_EditorClassIdentifier: 
+  m_GroupName: Remote Group
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 2f235497636bd414e8d885c59a253cf7
+  m_SerializeEntries:
+  - m_GUID: 4b2359df2d2da4ea8b1cdcadf51f5773
+    m_Address: Capsule
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 047615009c42846e985e43f94470d787
+    m_Address: Cube
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f596166a3f1f9423ca1ff2bbbf75bcec
+    m_Address: Sphere
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 7dd0d90897de345a8a420524c771f79a, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: b88e5338bdea4425c8aa61cd50ca0652, type: 2}
+    - {fileID: 11400000, guid: 7b66c3e48313a46d89ef3313cd0e0e49, type: 2}
