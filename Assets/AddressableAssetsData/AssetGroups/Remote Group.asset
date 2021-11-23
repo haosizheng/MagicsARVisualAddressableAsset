@@ -29,6 +29,10 @@ MonoBehaviour:
     m_Address: Sphere
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: 19d32381620a84d2ca3711c35740bcca
+    m_Address: BrightnessSample
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 7dd0d90897de345a8a420524c771f79a, type: 2}
   m_SchemaSet:

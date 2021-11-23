@@ -64,7 +64,7 @@ MonoBehaviour:
       - m_Id: 000e949a06b7b4256925f7653bad2b09
         m_Value: ServerData/[BuildTarget]
       - m_Id: 1ee1de31bcfd64d10b0d7307a7394d66
-        m_Value: https://raw.githubusercontent.com/haosizheng/MagicsARViewerAddressablesAsset/main/[BuildTarget]
+        m_Value: https://raw.githubusercontent.com/haosizheng/MagicsARViewerAddressablesRemoteServer/main/[BuildTarget]
     m_ProfileEntryNames:
     - m_Id: 57ddf1d9daecb49999433a7f8a8e34dd
       m_Name: BuildTarget

@@ -6,8 +6,11 @@ using UnityEngine.AddressableAssets;
 
 public class Test : MonoBehaviour
 {
-    [SerializeField] GameObject myGameObject;
-    [SerializeField] AssetReference addressableAsset;
+    [SerializeField] GameObject Container;
+
+    [SerializeField] string addressableIP;
+    [SerializeField] AssetReference addressableRef;
+
     public bool LoadWithIP;
     public bool LoadWithRef;
 
@@ -23,14 +26,14 @@ public class Test : MonoBehaviour
         {
             LoadWithIP = false;
             // load with ip address
-            Addressables.LoadAssetAsync<GameObject>("Capsule").Completed += OnLoadDoneWithIP;
+            Addressables.LoadAssetAsync<GameObject>(addressableIP).Completed += OnLoadDoneWithIP;
         }
 
         if (LoadWithRef)
         {
             LoadWithRef = false;
             // load with refenerce
-            Addressables.LoadAssetAsync<GameObject>(addressableAsset).Completed += OnLoadDoneWithRef;
+            Addressables.LoadAssetAsync<GameObject>(addressableRef).Completed += OnLoadDoneWithRef;
         }
 
 
@@ -39,13 +42,16 @@ public class Test : MonoBehaviour
     private void OnLoadDoneWithIP(UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle<GameObject> obj)
     {
         // In a production environment, you should add exception handling to catch scenarios such as a null result
-        myGameObject = obj.Result;
+        var go = obj.Result;
+        GameObject.Instantiate(go);
     }
 
     private void OnLoadDoneWithRef(UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle<GameObject> obj)
     {
         // In a production environment, you should add exception handling to catch scenarios such as a null result
-        myGameObject = obj.Result;
+        var go = obj.Result;
+        GameObject.Instantiate(go);
+
     }
 
 
